@@ -1,22 +1,21 @@
-
 // progress section
 export const progress = [
   {
     step: 1,
-    title: "your info"
+    title: 'your info',
   },
   {
     step: 2,
-    title: "select plan"
+    title: 'select plan',
   },
   {
     step: 3,
-    title: "add-ons"
+    title: 'add-ons',
   },
   {
     step: 4,
-    title: "summary"
-  }
+    title: 'summary',
+  },
 ]
 
 // Plan
@@ -25,32 +24,31 @@ export const monthlyPlanOptions = [
     key: 'Arcade',
     value: 'Arcade (Monthly)',
     price: 9,
-    icon: 'arcadeIcon',
+    icon: 'icon-arcade.svg',
   },
   {
     key: 'Advanced',
     value: 'Advanced (Monthly)',
     price: 12,
-    icon: 'advancedIcon',
+    icon: 'icon-advanced.svg',
   },
-  { key: 'Pro', value: 'Pro (Monthly)', price: 15, icon: 'proIcon' },
+  { key: 'Pro', value: 'Pro (Monthly)', price: 15, icon: 'icon-pro.svg' },
 ]
 export const yearlyPlanOptions = [
   {
     key: 'Arcade',
     value: 'Arcade (Yearly)',
     price: 90,
-    icon: 'arcadeIcon',
+    icon: 'icon-arcade.svg',
   },
   {
     key: 'Advanced',
     value: 'Advanced (Yearly)',
     price: 120,
-    icon: 'advancedIcon',
+    icon: 'icon-advanced.svg',
   },
-  { key: 'Pro', value: 'Pro (Yearly)', price: 150, icon: 'proIcon' },
+  { key: 'Pro', value: 'Pro (Yearly)', price: 150, icon: 'icon-pro.svg' },
 ]
-
 
 // Add-Ons
 export const addOnsOptions = [

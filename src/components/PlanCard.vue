@@ -3,7 +3,7 @@
     <input type="radio" name="plan" :value="value" @input="handlePlanChange"  />
         <div class="card__content">
             <span class="card__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><g fill="none" filrule="evenodd"><circle cx="20" cy="20" r="20" fill="#FFAF7E"></circle><path fill="#FFF" filrule="nonzero" d="M24.995 18.005h-3.998v5.998h-2v-5.998H15a1 1 0 0 0-1 1V29a1 1 0 0 0 1 1h9.995a1 1 0 0 0 1-1v-9.995a1 1 0 0 0-1-1Zm-5.997 8.996h-2v-1.999h2v2Zm2-11.175a2.999 2.999 0 1 0-2 0v2.18h2v-2.18Z"></path></g></svg>
+                <img :src="require(`../assets/images/${icon}`)" />
             </span>
         <div class="card__text">
                         <h3>{{title}}</h3>
@@ -19,7 +19,7 @@ import { defineComponent , ref } from 'vue';
 
     export default defineComponent({
         name:"plan-card",
-        props:["title", "price", "value" , "planOption", "selectedPlan","handlePlanChange"],
+        props:["title", "price", "value" , "icon" , "planOption", "selectedPlan","handlePlanChange"],
         setup(){
             let selectedPlanRef = ref("") 
             return{

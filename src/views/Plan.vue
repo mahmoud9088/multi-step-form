@@ -7,7 +7,7 @@
     <div class="plans___container">
       <div v-for="option in planOptions" :key="option.key">
         <PlanCard
-          icon=""
+          :icon="option.icon"
           :title="option.key"
           :price="option.price"
           :value="option.value"

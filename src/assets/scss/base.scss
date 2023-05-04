@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "Ubuntu";
+    src: url(../fonts/Ubuntu-Bold.ttf);
+    src: url(../fonts/Ubuntu-Medium.ttf);
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+* , *::after , *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: $magnolia;
+    font-family: "Ubuntu";
+}
+
+#app{
+  position: relative;
+}
+
+.form__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    .back__btn {
+      outline: none;
+      border: none;
+      background-color: transparent;
+      color: $cool-gray;
+      cursor: pointer;
+      &:hover {
+        color: $marine-blue;
+      }
+    }
+    .next__btn {
+      border: none;
+      outline: none;
+      margin-left: auto;
+      background-color: $marine-blue;
+      width: 120px;
+      border-radius: 7px;
+      padding: 15px 30px;
+      cursor: pointer;
+      color: #fff;
+      font-weight: $bold;
+
+      &:hover {
+        opacity: 60%;
+      }
+    }
+  }
+
+.form__mobile__buttons{
+  @extend .form__buttons;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $white;
+  padding: 20px 15px;
+}
+
+.form-container-xs{
+  padding: 25px 20px;
+  height: fit-content;
+  transform: translateY(-60px) ;
+  border-radius: 10px;
+  background-color: $white;
+  width: 350px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+@media (max-width: $responsive-xs){
+  .form__buttons{
+    display: none;
+  }
+  .form__mobile__buttons{
+  display: inherit;
+  }
+}
+
+  // @media (max-width: 475px) {
+  //   .form__buttons {
+  //     display: flex;
+  //     justify-content: space-between;
+  //     width: 100%;
+
+
+  //     background-color: $white;
+  //     position: absolute;
+  //     bottom: 0;
+  //     left: 0;
+  //     right: 0;
+      
+
+
+  //     .back__btn {
+  //       outline: none;
+  //       border: none;
+  //       background-color: transparent;
+  //       color: $cool-gray;
+  //       cursor: pointer;
+  //       &:hover {
+  //         color: $marine-blue;
+  //       }
+  //     }
+  //     .next__btn {
+  //       border: none;
+  //       outline: none;
+  //       margin-left: auto;
+  //       background-color: $marine-blue;
+  //       width: 120px;
+  //       border-radius: 7px;
+  //       padding: 15px 30px;
+  //       cursor: pointer;
+  //       color: #fff;
+  //       font-weight: $bold;
+  
+  //       &:hover {
+  //         opacity: 60%;
+  //       }
+  //     }
+  //   }
+  // }
